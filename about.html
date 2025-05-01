@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البرامج الرسميّة </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            background: #fdfdfd;
+            color: #333;
+        }
+
+        .site-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .site-header .logo img {
+            width: 80px;
+            vertical-align: middle;
+        }
+
+        .main-navigation {
+            margin-top: 1rem;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-list li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .pdf-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-btn i {
+            font-size: 1.2rem;
+        }
+
+        .download-btn:hover {
+            background-color: #45a049;
+        }
+
+        @media (max-width: 600px) {
+            .download-btn {
+                width: 90%;
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <a href="index.html"><img src="school_logo-removebg-preview.png" alt="مدرستي"></a>
+        </div>
+        <h1>البرامج الرسميّة</h1>
+        <nav class="main-navigation">
+            <ul class="nav-list">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">البرامج الرّسميّة</a></li>
+                <li><a href="courses.html">الدروس</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>البرامج الرسميّة</h2>
+
+        <div class="pdf-container">
+            <iframe src="programme_officiel.pdf" frameborder="0"></iframe>
+        </div>
+
+        <a href="programme_officiel.pdf" download class="download-btn">
+            <i class="fas fa-download"></i> تنزيل الملف
+        </a>
+    </section>
+</body>
+</html>
+
+
+

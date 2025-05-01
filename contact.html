@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>اتصل بنا</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f3e5f5, #e1f5fe);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a1b9a, #8e24aa);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 38px;
+      letter-spacing: 1px;
+    }
+
+    .contact-container {
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-container h2 {
+      font-size: 28px;
+      color: #6a1b9a;
+      margin-bottom: 30px;
+    }
+
+    form {
+      text-align: right;
+    }
+
+    .form-group {
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .form-group i {
+      margin-left: 8px;
+      color: #6a1b9a;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #8e24aa;
+      box-shadow: 0 0 5px rgba(142, 36, 170, 0.4);
+      outline: none;
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(to right, #6a1b9a, #8e24aa);
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 16px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background: linear-gradient(to right, #7e57c2, #ab47bc);
+    }
+
+    .contact-info {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .contact-info p {
+      margin: 12px 0;
+    }
+
+    .contact-info i {
+      color: #8e24aa;
+      margin-left: 10px;
+    }
+
+    .btn {
+      margin-top: 40px;
+      width: 200px;
+      height: 50px;
+      background: linear-gradient(to right, #4a148c, #6a1b9a);
+      color: #fff;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    .btn span {
+      position: absolute;
+      width: 100%;
+      transition: 0.5s;
+    }
+
+    .btn-text-one {
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    .btn-text-two {
+      top: 150%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    .btn:hover .btn-text-one {
+      top: -100%;
+    }
+
+    .btn:hover .btn-text-two {
+      top: 50%;
+    }
+
+    @media (max-width: 600px) {
+      .contact-container {
+        padding: 25px;
+        margin: 20px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>اتصل بنا</h1>
+  </header>
+
+  <div class="contact-container">
+    <h2>راسلنا بكل سهولة</h2>
+
+    <form action="submit_form.php" method="POST">
+      <div class="form-group">
+        <label for="name"><i class="fas fa-user"></i> الاسم:</label>
+        <input type="text" id="name" name="name" placeholder="أدخل اسمك" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email"><i class="fas fa-envelope"></i> البريد الإلكتروني:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message"><i class="fas fa-comment-dots"></i> رسالتك:</label>
+        <textarea id="message" name="message" rows="5" placeholder="أدخل تعليقك أو استفسارك هنا" required></textarea>
+      </div>
+
+      <button type="submit">إرسال الرسالة</button>
+    </form>
+
+    <div class="contact-info">
+      <h2>معلومات الاتصال</h2>
+      <p><i class="fas fa-phone"></i> 27667062/28649476</p>
+      <p><i class="fas fa-envelope"></i> homraninarjess123.com/baroudiamal123@.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> شارع الرياضيات، المدينة التعليمية</p>
+    </div>
+
+    <button class="btn" onclick="window.location.href='index.html';">
+      <span class="btn-text-one">العودة</span> 
+      <span class="btn-text-two">الصفحة الرئيسيّة</span>
+    </button>
+  </div>
+
+</body>
+</html>
+
+
